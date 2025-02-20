@@ -1,0 +1,569 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  height: 10dvh;
+  border-bottom: 2px solid rgba(220, 220, 220, 0.6);
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 89, 255, 0.8);
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.mobmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid rgba(220, 220, 220, 0.6);
+}
+
+.mobmenu ul li a {
+  display: block;
+  padding: 10px 0;
+}
+
+.start-btn,
+.view-courses {
+  background-color: rgba(0, 89, 255, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.start-btn a,
+.view-courses {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.start-btn:hover,
+.view-courses:hover {
+  background-color: rgb(0, 89, 255);
+}
+
+main {
+  margin-top: 80px;
+}
+
+.slider {
+  width: 100%;
+  height: 90dvh;
+}
+
+.hero-content {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+  z-index: 30; /* Ensures it stays above the carousel */
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  text-align: justify;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.253);
+  padding: 10px;
+  margin: 50px 0;
+}
+
+.hero-content a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(0, 89, 255);
+  padding: 8px 12px;
+  border-radius: 45px;
+}
+
+.mouse-icon {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.mouse-icon i {
+  background-color: rgba(0, 0, 0, 0.253);
+  padding: 2px 6px;
+}
+
+.image-item1 {
+  background: linear-gradient(
+      rgba(0, 89, 255, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/hero.jpg");
+  width: 100%;
+  height: 90dvh;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-item2 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/hero3.jpg");
+  width: 100%;
+  height: 90dvh;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-item3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/hero9.jpg");
+  width: 100%;
+  height: 90dvh;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro,
+.why-choose-us,
+.testmonials,
+.about,
+.value,
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40dvh; */
+}
+
+.intro-wrapper,
+.why-choose-us-wrapper,
+.gallery-wrapper,
+.about-wrapper,
+.mission-wrapper,
+.vision-wrapper,
+.value-wrapper,
+.contact-wrapper,
+.form-wrapper {
+  width: 50dvw;
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: rgba(0, 89, 255, 0.8);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gallery,
+.mission,
+.vision,
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.courses a:hover {
+  border: none;
+  background-color: rgba(220, 220, 220, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 89, 255, 0.5);
+}
+
+.courses a {
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+}
+
+.item {
+  border: 2px solid rgb(0, 89, 255);
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(0, 89, 255);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.view-more a {
+  background-color: rgba(0, 89, 255, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.testmonials-wrapper {
+  width: 50dvw;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  place-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 89, 255, 0.5);
+}
+
+.review div p {
+  line-height: 1.8;
+  margin: 16px;
+}
+
+.review div > img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* border-left: 2px solid crimson; */
+}
+
+.contact-grid div > ul {
+  list-style: square;
+}
+
+.contact-grid div > ul > li > a,
+.form-submit p > a {
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+  font-size: 14px;
+}
+
+.contact-grid div > ul > li > a:hover,
+.form-submit p > a:hover {
+  border-bottom: 3px solid rgba(220, 220, 220, 0.5);
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px 0;
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  width: 90%;
+  margin-right: 18px;
+}
+
+.form-group input:focus,
+.text-area textarea:focus {
+  border-bottom: 3px solid rgb(0, 89, 255);
+}
+
+.text-area textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  padding: 40px 0;
+  resize: none;
+  width: 96%;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: gray;
+}
+
+.form-name::before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.form-email::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.form-phone::before {
+  content: "\f095"; /* Unicode for phone icon in Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.form-subject::before {
+  content: "\f02d"; /* Unicode for pencil icon in Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.text-area::before {
+  content: "\f303"; /* Unicode for pencil icon in Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.input-container input,
+.text-area textarea {
+  padding-left: 40px;
+  height: 30px;
+}
+
+.form-submit {
+  margin-top: 20px;
+}
+
+.form-submit input[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(0, 89, 255);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: rgb(0, 89, 255); */
+  background-color: black;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 80dvw;
+  gap: 20px;
+  padding: 30px 0;
+  color: white;
+}
+
+.footer-wrapper > div > a {
+  text-align: justify;
+}
+
+.footer-wrapper > div > a > i {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-wrapper > div > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-wrapper > div > ul > li::before {
+  content: " \276F";
+  padding-right: 10px;
+}
+
+.footer-wrapper > div > ul > li {
+  padding-bottom: 10px;
+}
+
+.footer-wrapper > div > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright p {
+  color: white;
+  font-size: 18px;
+}
+
+/* style for signup */
+.container-reg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100dvh;
+}
+
+.hero-banner-content {
+  position: absolute;
+  top: 48%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Ensures it stays above the carousel */
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.form-location::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* style for sign in */
+.form-password::before {
+  content: "\f023";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.signin {
+  display: block;
+}
+
+.bars button {
+  font-size: 30px;
+  color: rgb(0, 89, 255);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .deskscrin {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo a img {
+    width: 240px;
+  }
+
+  .hero-content {
+    top: 50%;
+    font-size: 10px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .gallery-wrapper {
+    width: 100dvw;
+    padding: 10px;
+  }
+
+  .testmonials-wrapper {
+    width: 100dvw;
+    /* text-align: justify;
+    margin-bottom: 10px; */
+  }
+
+  .intro-wrapper,
+  .why-choose-us-wrapper,
+  .mission-wrapper,
+  .vision-wrapper,
+  .value-wrapper,
+  .about-wrapper,
+  .contact-wrapper,
+  .form-wrapper {
+    width: 100dvw;
+    padding: 0 10px;
+  }
+
+  .form {
+    height: 89dvh;
+  }
+
+  .container-reg {
+    display: block;
+    height: 89dvh;
+  }
+
+  .signup {
+    display: block;
+  }
+
+  .footer-wrapper {
+    display: block;
+  }
+
+  .copyright p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .mobscrin {
+    display: none;
+  }
+
+  header nav ul li a:hover {
+    color: rgb(0, 89, 255);
+    border-bottom: 3px solid rgba(0, 89, 255, 0.8);
+  }
+
+  .main-signup,
+  .main-sigin {
+    margin: 0;
+  }
+}
