@@ -566,6 +566,10 @@ footer {
     justify-content: space-between;
   }
 
+  .logo a img {
+    width: 240px;
+  }
+
   .form {
     height: 89dvh;
   }
