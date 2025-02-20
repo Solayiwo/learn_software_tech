@@ -489,6 +489,10 @@ footer {
     display: none;
   }
 
+  .tabscrin {
+    display: none;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -552,6 +556,30 @@ footer {
   }
 }
 
+@media screen and (max-width: 1022px) {
+  .deskscrin {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form {
+    height: 89dvh;
+  }
+
+  .container-reg {
+    display: block;
+    height: 89dvh;
+  }
+
+  .signup {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1023px) {
   .mobscrin {
     display: none;
@@ -560,6 +588,10 @@ footer {
   header nav ul li a:hover {
     color: rgb(0, 89, 255);
     border-bottom: 3px solid rgba(0, 89, 255, 0.8);
+  }
+
+  .tabscrin {
+    display: none;
   }
 
   .main-signup,
